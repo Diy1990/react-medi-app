@@ -1,6 +1,26 @@
 import { Navbar } from "../../components/Navbar"
+import { useEffect, useState } from "react"
 
 const PatientsPage = () => {
+
+  const [data, setData] = useState()
+
+  useEffect(()  =>{
+    const getAllPatients = async () => {
+      try {
+        const response = await fetch('http://localhost:8000/api/patients')
+        const patients = await response.json
+        console.log(patients)
+      } catch (error) {
+        console.log("THIS IS AN ERROR IN CASE API  FAILS ")
+      }
+    }
+
+getAllPatients
+
+  }),[]
+
+  
   return (
     <>
     <Navbar />
