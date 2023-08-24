@@ -2,9 +2,9 @@ import { Link } from 'react-router-dom'
 
 export const Navbar = () => {
   return (
-    <nav className="bg-purple-900">
+    <nav className="bg-cyan-500">
     <div className="flex justify-between items-center px-4 py-6">
-      <h1 className="text-white font-bold">Medic app</h1>
+      <h1 className="text-white font-bold">Fast Medic App</h1>
       <ul className="flex">
         <li>
             <Link to="/" className="text-white hover:text-gray-400 px-4 py-2">Home</Link>
