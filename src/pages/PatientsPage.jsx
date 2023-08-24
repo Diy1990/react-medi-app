@@ -1,5 +1,5 @@
-import  { useEffect, useState } from "react";
-import { Navbar } from "../components/Navbar";
+import  { useEffect, useState } from "react"
+import { Navbar } from "../components/Navbar"
 
 const PatientsPage = () => {
   const [data, setData] = useState([]);
